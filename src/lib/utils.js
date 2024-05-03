@@ -1,4 +1,4 @@
-const { default: mongoose } = require ("mongoose");
+const mongoose = require("mongoose");
 require('dotenv').config({ path: 'ENV_FILENAME' });
 
 const connection = {};
