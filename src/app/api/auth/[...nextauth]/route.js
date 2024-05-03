@@ -1,3 +1,3 @@
 
-export {GET, POST} from "/Dev/Gamechamp/next-app/src/lib/auth"
+export {GET, POST} from "/Dev/Gamechamp/gamechamp/src/lib/auth"
 
