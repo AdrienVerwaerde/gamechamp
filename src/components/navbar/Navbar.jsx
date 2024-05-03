@@ -1,0 +1,26 @@
+
+import Link from "next/link";
+import Links from "./links/Links";
+import styles from "./navbar.module.css";
+import { auth } from "../../lib/auth";
+import Image from "next/image";
+
+const Navbar = async () => {
+
+    const session = await auth();
+
+    return (
+        <div className={styles.container}>
+            <Link href="/" className={styles.logo}>
+                <Image className={styles.logoAlt} src="/logo-alt.png" width={30} height={30}/>
+                <Image className={styles.logoMain} src="/logo.png" width={150} height={30}/>
+            </Link>
+            <div>
+                <Links session={session}/>
+            </div>
+        </div>
+
+    )
+}
+
+export default Navbar;
