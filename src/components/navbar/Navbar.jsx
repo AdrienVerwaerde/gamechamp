@@ -12,8 +12,8 @@ const Navbar = async () => {
     return (
         <div className={styles.container}>
             <Link href="/" className={styles.logo}>
-                <Image className={styles.logoAlt} src="/logo-alt.png" width={30} height={30}/>
-                <Image className={styles.logoMain} src="/logo.png" width={150} height={30}/>
+                <Image className={styles.logoAlt} alt="Alternative Gamechamp logo" src="/logo-alt.png" width={30} height={30}/>
+                <Image className={styles.logoMain} alt="Gamechamp logo" src="/logo.png" width={150} height={30}/>
             </Link>
             <div>
                 <Links session={session}/>
