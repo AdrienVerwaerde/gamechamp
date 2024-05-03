@@ -3,7 +3,7 @@ import "./globals.css";
 import "./fonts.css";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
-require('dotenv').config({ path: 'ENV_FILENAME' });
+
 
 const inter = Inter({ subsets: ["latin"] });
 
