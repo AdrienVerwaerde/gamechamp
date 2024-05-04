@@ -11,6 +11,8 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "dotenv": "^16.4.5",
+    "mongod": "^2.0.0",
+    "mongodb": "^6.6.0",
     "mongoose": "^8.0.0",
     "next": "14.2.3",
     "next-auth": "^5.0.0-beta.3",
