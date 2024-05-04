@@ -13,7 +13,7 @@
     "dotenv": "^16.4.5",
     "mongod": "^2.0.0",
     "mongodb": "^6.6.0",
-    "mongoose": "^8.0.0",
+    "mongoose": "^8.3.3",
     "next": "14.2.3",
     "next-auth": "^5.0.0-beta.3",
     "react": "^18",
@@ -22,6 +22,12 @@
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
     "eslint": "^8",
-    "eslint-config-next": "14.2.3"
-  }
+    "eslint-config-next": "14.2.3",
+    "nodemon": "^3.1.0"
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "next.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
