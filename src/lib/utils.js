@@ -1,4 +1,5 @@
 const mongoose = require ("mongoose");
+require('dotenv').config();
 
 const connection = {};
 
@@ -8,7 +9,7 @@ export const connectToDb = async () => {
             console.log("Using existing connection");
             return;
         }
-        const db = await mongoose.connect("mongodb+srv://verwaerdeadrien:Sanada1122@cluster0.btbshng.mongodb.net/next-app?retryWrites=true&w=majority");
+        const db = await mongoose.connect("process.env.MONGO");
         connection.isConnected = db.connections[0].readyState;
     } catch (error) {
         console.log(error);
