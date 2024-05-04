@@ -15,4 +15,5 @@ export const connectToDb = async () => {
         console.log(error);
         throw new Error(error);
     }
+    
 };
