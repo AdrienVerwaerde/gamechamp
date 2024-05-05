@@ -7,7 +7,7 @@ import { User } from "./models";
 import bcrypt from "bcryptjs";
 import { authConfig } from "./auth.config";
 
-const login = async (credentials) => {
+export const login = async (credentials) => {
     try {
         connectToDb();
         const user = await User.findOne({ username: credentials.username });
@@ -38,7 +38,7 @@ export const {
     providers: [
         GitHub({
             clientId: process.env.GITHUB_ID,
-            clientSecret: process.env.GITHUB_SECRET,
+            clientSecret: process.env.GITHUB_SECRET
         }),
         GoogleProvider({
             clientId: process.env.GOOGLE_CLIENT_ID,

@@ -38,4 +38,5 @@ export const authConfig = {
             return true
         },
     },
+    
 };
