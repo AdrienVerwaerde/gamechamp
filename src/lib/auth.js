@@ -1,6 +1,6 @@
 import NextAuth from "next-auth";
-import GitHub from "next-auth/providers/github";
-import GoogleProvider from "next-auth/providers/google";
+import GitHub from "next-auth/callbacks/github";
+import GoogleProvider from "next-auth/callbacks/google";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { connectToDb } from "./utils";
 import { User } from "./models";
