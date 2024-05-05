@@ -57,7 +57,7 @@ export const {
     ],
     callbacks: {
         async signIn({ user, account, profile }) {
-            if (account.provider === "github" || account.provider === "google") {
+            if (account.provider === "google" || account.provider ==="github") {
                 connectToDb();
                 try {
                     const user = await User.findOne({ email: profile.email });

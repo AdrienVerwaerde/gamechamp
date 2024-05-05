@@ -17,6 +17,7 @@ const LoginPage = () => {
                 <form action={handleGoogleLogin}>
                     <button className={styles.google}><Image className={styles.logo} alt="Google logo" src="/google.png" width={20} height={20} />Login with Google</button>
                 </form>
+                <p>or</p>
                 <LoginForm />
             </div>
         </div>
