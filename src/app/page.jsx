@@ -13,7 +13,7 @@ const Home = () => {
           <Link href="/about">
             <button className={styles.button}>Learn More</button>
           </Link>
-          <Link href="/about">
+          <Link href="/contact">
           <button className={styles.buttonContact}>Contact</button>
           </Link>
         </div>
