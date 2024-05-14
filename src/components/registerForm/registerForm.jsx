@@ -14,7 +14,7 @@ export const RegisterForm = () => {
     const router = useRouter();
 
     useEffect(() => {
-        state?.success && router.push('/')
+        state?.success && router.push('/login')
     }, [state?.success, router]);
 
     return (

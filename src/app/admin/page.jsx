@@ -5,6 +5,7 @@ import AdminPostForm from "../../components/adminPostForm/adminPostForm";
 import AdminUsers from "../../components/adminUsers/adminUsers";
 import AdminUserForm from "../../components/adminUserForm/adminUserForm";
 import { auth } from "../../lib/auth";
+import Loader from "../../components/loader/loader";
 
 const AdminPage = async () => {
 
@@ -14,7 +15,7 @@ const AdminPage = async () => {
         <div className={styles.container}>
             <div className={styles.row}>
                 <div className={styles.col}>
-                    <Suspense fallback={<div>Loading...</div>}>
+                    <Suspense fallback={<Loader />}>
                         <AdminPosts />
                     </Suspense>
                 </div>
@@ -24,7 +25,7 @@ const AdminPage = async () => {
             </div>
             <div className={styles.row}>
                 <div className={styles.col}>
-                    <Suspense fallback={<div>Loading...</div>}>
+                    <Suspense fallback={<Loader />}>
                         <AdminUsers />
                     </Suspense>
                 </div>

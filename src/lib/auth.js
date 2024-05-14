@@ -60,9 +60,9 @@ export const {
             if (account.provider === "google" || account.provider ==="github") {
                 connectToDb();
                 try {
-                    const user = await User.findOne({ email: profile.email });
+                    const existingUser = await User.findOne({ email: profile.email });
 
-                    if (!user) {
+                    if (!existingUser) {
                         const newUser = new User({
                             username: profile.login,
                             email: profile.email,
@@ -70,6 +70,7 @@ export const {
                         });
 
                         await newUser.save();
+                        return true;
                     }
                 } catch (err) {
                     console.log(err);
