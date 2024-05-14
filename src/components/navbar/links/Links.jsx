@@ -36,26 +36,27 @@ const Links = ({ session }) => {
         setOpen(!open);
     };
 
+
     const isAdmin = true;
 
     return (
         <div className={styles.container}>
             <div className={styles.links}>
                 {links.map((link => (
-                    <NavLink item={link} key={link.title} />
+                    <NavLink item={link} key={link.title} toggleMenu={toggleMenu} />
                 )))}
                 {
                     session?.user ? (
                         <>
                             {
-                                session.user.isAdmin && <NavLink item={{ title: "Admin", path: "/admin" }} />
+                                session.user.isAdmin && <NavLink item={{ title: "Admin", path: "/admin" }} toggleMenu={toggleMenu} />
                             }
                             <form action={handleLogout}>
                                 <button className={styles.logout}>Logout</button>
                             </form>
                         </>
                     ) : (
-                        <NavLink item={{ title: "Login", path: "/login" }} />
+                        <NavLink item={{ title: "Login", path: "/login" }} toggleMenu={toggleMenu}/>
                     )}
             </div>
             <div className={styles.menuButtonContainer}>
@@ -66,7 +67,7 @@ const Links = ({ session }) => {
             {open && (
                 <div className={styles.mobileLinks}>
                     {links.map((link) => (
-                        <NavLink item={link} key={link.title} />
+                        <NavLink item={link} key={link.title} toggleMenu={toggleMenu} />
                     ))}
                     {session?.user ? (
                         <>
@@ -76,7 +77,7 @@ const Links = ({ session }) => {
                             </form>
                         </>
                     ) : (
-                        <NavLink item={{ title: "Login", path: "/login" }} />
+                        <NavLink item={{ title: "Login", path: "/login" }} toggleMenu={toggleMenu} />
                     )}
                 </div>
             )}

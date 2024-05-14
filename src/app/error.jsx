@@ -1,9 +1,11 @@
 "use client"
 
+import ErrorComponent from "../components/error/errorComponent";
+
 const Error = () => {
     return (
         <div>
-            Error.
+            <ErrorComponent />
         </div>
     )
 }

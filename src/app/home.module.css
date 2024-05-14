@@ -76,11 +76,6 @@
     object-fit: contain;
 }
 
-.loader {
-
-    
-}
-
 @media (max-width: 1024px) {
     .container{
         flex-direction: column;

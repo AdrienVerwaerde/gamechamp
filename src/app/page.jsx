@@ -18,11 +18,11 @@ const Home = () => {
           </Link>
         </div>
         <div className={styles.brands}>
-          <Image src="/brands.png" alt="" fill className={styles.brandImg} />
+          <Image src="/brands.png" alt="Logos of partner brands" fill className={styles.brandImg} />
         </div>
       </div>
       <div className={styles.imgContainer}>
-        <Image src="/home-img.jpg" alt="" fill className={styles.homeImg} />
+        <Image src="/home-img.jpg" alt="Picture of the homepage" fill className={styles.homeImg} />
       </div>
     </div>
 

@@ -11,6 +11,19 @@
 }
 
 .loader {
-    animation: rotate 1s linear infinite;
-    width: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
+
+.loader span {
+    font-family: 'Teko', sans-serif;
+    font-size: 22px;
+}
+
+.loaderImg {
+    animation: rotate 1s linear infinite;
+}
+
