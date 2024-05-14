@@ -8,7 +8,7 @@ const Home = () => {
     <div className={styles.container}>
       <div className={styles.textContainer}>
         <h1 className={styles.title}>Enhance Gaming Worldwide</h1>
-        <p className={styles.desc}>Helping gaming organizations to develop ambitious projects since 2018. Join our quest for limitless and globally enhanced gaming now !</p>
+        <p className={styles.desc}>Helping gaming organizations develop ambitious projects since 2018. Join our quest for limitless and globally enhanced gaming now !</p>
         <div className={styles.buttons}>
           <Link href="/about">
             <button className={styles.button}>Learn More</button>
