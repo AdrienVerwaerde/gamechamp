@@ -1,8 +1,12 @@
-.container {
+.navContainer {
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--bg);
 }
 
 .logo {

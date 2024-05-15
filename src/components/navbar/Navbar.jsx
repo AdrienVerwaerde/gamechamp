@@ -10,7 +10,7 @@ const Navbar = async () => {
     const session = await auth();
 
     return (
-        <div className={styles.container}>
+        <div className={styles.navContainer}>
             <Link href="/" className={styles.logo}>
                 <Image className={styles.logoAlt} alt="Alternative Gamechamp logo" src="/logo-alt.png" width={30} height={30}/>
                 <Image className={styles.logoMain} alt="Gamechamp logo" src="/logo.png" width={150} height={30}/>
