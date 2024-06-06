@@ -71,7 +71,7 @@ const Links = ({ session }) => {
                     ))}
                     {session?.user ? (
                         <>
-                            {session.user.isAdmin && <NavLink item={{ title: "Admin", path: "/admin" }} />}
+                            {session.user.isAdmin && <NavLink item={{ title: "Admin", path: "/admin" }} toggleMenu={toggleMenu} />}
                             <form action={handleLogout}>
                                 <button className={styles.logout}>Logout</button>
                             </form>
